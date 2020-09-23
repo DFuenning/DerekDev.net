@@ -3,8 +3,15 @@ body {
     color: #4e4e4e;
     padding: 0;
     margin: 0;
-width: 100%;
+    width: 100%;
 }
+
+@media (max-width: 375px) {
+    nav {
+        padding: auto !important;
+    }
+}
+
 
 h1,
 h2,
@@ -21,7 +28,7 @@ a {
 }
 
 a:hover {
-    color: #0078ff;
+    color: #009970;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
@@ -31,7 +38,7 @@ a:hover {
 }
 
 .color-a {
-    color: #0078ff;
+    color: #009970;
 }
 
 .color-d {
@@ -74,7 +81,12 @@ a:hover {
     overflow: hidden;
 }
 
-.bg-image {
+.bg-image video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -84,12 +96,12 @@ a:hover {
 @media (max-width: 1024px) {
     .bg-image {
         background-attachment: scroll;
+        background-size: contain;
     }
+
+  
 }
 
-.overlay-mf {
-    background-color: #0078ff;
-}
 
 .overlay-mf {
     position: absolute;
@@ -155,7 +167,7 @@ a:hover {
 .line-mf {
     width: 40px;
     height: 5px;
-    background-color: #0078ff;
+    background-color: #009970;
     margin: 0 auto;
 }
 
@@ -173,7 +185,7 @@ a:hover {
     content: '';
     position: absolute;
     height: 3px;
-    background-color: #0078ff;
+    background-color: #009970;
     width: 100px;
     bottom: -12px;
 }
@@ -214,12 +226,12 @@ a:hover {
     border-radius: 50%;
     line-height: 1.4;
     margin: 0 15px 0 0;
-    box-shadow: 0 0 0 3px #0078ff;
+    box-shadow: 0 0 0 3px #009970;
     transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-    background-color: #0078ff;
+    background-color: #009970;
     color: #fff;
     box-shadow: 0 0 0 3px #cde1f8;
     transition: all 500ms ease;
@@ -243,7 +255,7 @@ a:hover {
 }
 
 .list-ico span {
-    color: #0078ff;
+    color: #009970;
     margin-right: 10px;
 }
 
@@ -256,7 +268,7 @@ a:hover {
     line-height: 1.55;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 0 0 10px #0078ff;
+    box-shadow: 0 0 0 10px #009970;
     display: block;
 }
 
@@ -301,7 +313,7 @@ a:hover {
     position: fixed;
     width: 42px;
     height: 42px;
-    background-color: #0078ff;
+    background-color: #009970;
     opacity: .7;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -319,7 +331,7 @@ a:hover {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #0078ff;
+    background: #009970;
     color: #fff;
     width: 44px;
     height: 44px;
@@ -362,7 +374,7 @@ a:hover {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #f2f2f2;
-    border-top: 6px solid #0078ff;
+    border-top: 6px solid #009970;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -418,7 +430,7 @@ a:hover {
 }
 
 .button-a {
-    background-color: #0078ff;
+    background-color: #009970;
     color: #fff;
     border-color: #cde1f8;
 }
@@ -539,26 +551,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-    color: #0078ff;
+    color: #009970;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-    background-color: #0078ff;
+    background-color: #009970;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-    color: #0078ff;
+    color: #009970;
 }
 
 .navbar-b.navbar-reduce .show>.nav-link,
 .navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-    color: #0078ff;
+    color: #009970;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-    color: #0078ff;
+    color: #009970;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -589,13 +601,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-    background-color: #0078ff;
+    background-color: #009970;
     color: #fff;
     transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-    background-color: #0078ff;
+    background-color: #009970;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -672,6 +684,8 @@ a:hover {
     opacity: .9;
 }
 
+
+
 .intro .intro-title {
     color: #fff;
     font-weight: 600;
@@ -720,7 +734,7 @@ a:hover {
 
 .intro-single .breadcrumb {
     background-color: transparent;
-    color: #0078ff;
+    color: #009970;
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -815,7 +829,7 @@ a:hover {
 
 .cta {
     margin: 50px auto;
-    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/cta-bg.jpg") fixed center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("img/para.jpg") fixed center center;
     background-size: cover;
     padding: 60px 0;
 }
@@ -884,17 +898,17 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-    color: #0078ff;
+    color: #009970;
 }
 
 .work-content .w-like {
     font-size: 2.5rem;
-    color: #0078ff;
+    color: #009970;
     float: right;
 }
 
 .work-content .w-like a {
-    color: #0078ff;
+    color: #009970;
 }
 
 .work-content .w-like .num-like {
@@ -939,7 +953,7 @@ a:hover {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-    background-color: #0078ff !important;
+    background-color: #009970 !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -994,4 +1008,235 @@ a:hover {
         position: static;
         margin-top: 30px;
     }
+}
+
+/* FAQ Section */
+.reserch-section {
+    background: #009970;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100vw;
+    padding-left: auto;
+    padding-right: auto;
+
+}
+
+
+.aboutTitle {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.aboutTitle h3 {
+    color: #fff;
+}
+
+.aboutTitle #white {
+    background: #fff;
+}
+
+
+.tab-content {
+    color: #fff;
+}
+
+.reserch-tab-menu {
+    display: block;
+    border-bottom: none;
+}
+
+.reserch-tab-menu li.nav-item {
+    display: block;
+}
+
+.reserch-tab-menu li.nav-item a.nav-link {
+    display: block;
+    padding: 15px 29px;
+    margin-bottom: 8px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.45;
+    border-radius: 0;
+    background: #cde1f838;
+}
+
+.reserch-tab-menu li.nav-item a.nav-link.active {
+    background: #ffc000;
+}
+
+.reserch-tab {
+    margin-bottom: 70px;
+}
+
+.reserch-tab h2 {
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.reserch-tab p {
+    margin-bottom: 30px;
+}
+
+.reserch-text {
+    margin-bottom: 60px;
+}
+
+.reserch-text h5 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.reserch-info-warp {
+    padding-top: 36px;
+}
+
+.reserch-info-warp .info-box {
+    margin-top: 36px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.footer-paralax {
+    padding: 4rem 0 0 0;
+    
+}
+
+.overlay-mf {
+    background-color: #cde1f8 !important;
+}
+
+.contact-mf {
+    margin-top: 4rem;
+}
+
+@media (min-width: 767px) {
+    .contact-mf .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+    }
+}
+
+.php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.php-email-form input,
+.php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.php-email-form input::focus,
+.php-email-form textarea::focus {
+    background-color: #009970;
+}
+
+.php-email-form input {
+    padding: 20px 15px;
+}
+
+.php-email-form textarea {
+    padding: 12px 15px;
+    margin-bottom: 0;
+}
+
+.php-email-form button[type="submit"] {
+    background: #009970;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.php-email-form button[type="submit"]:hover {
+    background: #3393ff;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #009970;
+}
+
+footer .copyright {
+    margin-bottom: .3rem;
+}
+
+footer .credits {
+    margin-bottom: 0;
+}
+
+footer .credits a {
+    color: #fff;
 }

@@ -7,7 +7,7 @@
     <title>Derek Fuenning</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="favicon_io/favicon-16x16.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,8 @@
 <body>
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll" href="#page-top">Derek Fuenning</a>
+            <a class="navbar-brand js-scroll" id="bigBoy" href="#page-top">Derek Fuenning</a>
+         
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -34,14 +35,15 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll active" href="index.html">Home</a>
                     </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#work">Portfolio</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#service">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#work">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#contact">Contact</a>
@@ -52,11 +54,14 @@
     </nav>
     <!-- ======= Intro Section ======= -->
     <div id="home" class="intro route bg-image">
+       
+            <div class="overlay-itro">
+                <video class="bg-image" autoplay loop>
+                    <source src="img/hero.mp4" type="video/mp4">
+                </video>
 
-        <div class="overlay-itro"> <video class="bg-image" autoplay loop muted><source src="img/hero.mp4" type="video/mp4"></video>
-                
-            
-        </div>
+            </div>
+        
         <div class="intro-content display-table">
             <div class="table-cell">
                 <div class="container">
@@ -76,21 +81,22 @@
     </div><!-- End Intro Section -->
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
-        <div class="container">
+        <div class="container" id="services">
 
             <div class="row">
                 <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
                     <div class="content">
                         <h3>Why Choose Derek for your Development Needs?</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
-                            optio ad corporis.
+                            My journey started when tasked with fixing typos on my company's website, and now there's
+                            not a day I go
+                            without hopping into VS-code.
+                            Incredibly curious, extremely driven, constantly humbled and always learning.
+                            <br> <span style="font-weight: bolder;">Connect with me!</span>
                         </p>
                         <div class="text-center">
-                            <a href="#" class="more-btn">Contact Me<i class="bx bx-chevron-right"></i></a>
+                            <a href="#contact" class="more-btn">Contact Me<i style="padding-left: 5px;"
+                                    class="ion-stats-bars"></i></a>
                         </div>
                     </div>
                 </div>
@@ -99,25 +105,25 @@
                         <div class="row">
                             <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="icon-box mt-4 mt-xl-0">
-                                    <i class="bx bx-receipt"></i>
+                                    <i class="ion-monitor"></i>
                                     <h4>Front-End Development</h4>
-                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
-                                        aliquip</p>
+                                    <p>HTML5, CSS3, JavaScript, React.js, jQuery, JSON, AJAX, ES6, Handlebars.js</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="icon-box mt-4 mt-xl-0">
-                                    <i class="bx bx-cube-alt"></i>
+                                    <i class="ion-code-working"></i>
                                     <h4>Back-End Development</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                        deserunt</p>
+                                    <p>Node.js, MySQL, MongoDB, TDD, Axios, Express.js, Sequelize, Debugging, Databases
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
                                 <div class="icon-box mt-4 mt-xl-0">
-                                    <i class="bx bx-images"></i>
+                                    <i class="ion-android-phone-portrait"></i>
                                     <h4>Applications</h4>
-                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
+                                    <p>VS Code, Atom, Chrome Dev Tools, GitHub, Bash, GitLab, Terminal, WordPress,
+                                        Webflow, Wix, Balsamiq
                                     </p>
                                 </div>
                             </div>
@@ -135,16 +141,15 @@
         <div class="container">
 
             <div class="text-center" data-aos="zoom-in">
-                <h3>Contact Us</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.</p>
-                <a class="cta-btn" href="#">Contact Us</a>
+                <h3>Contact Me</h3>
+                <p>Drop me a line! Need help with front-end or back-end work? Have an awesome fish taco recipe? Hit me
+                    up!</p>
+                <a class="cta-btn" href="#contact">Contact Me</a>
             </div>
 
         </div>
     </section>
-    
+
     <!-- End Cta Section -->
 
 
@@ -182,7 +187,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="w-like">
-                                        <a href="portfolio-details.html"> <span class="ion-ios-plus-outline"></span></a>
+                                        <a href="https://github.com/DFuenning/LoganWebsite" target="_blank"> <span class="ion-ios-plus-outline"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +212,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="w-like">
-                                        <a href="portfolio-details.html"> <span class="ion-ios-plus-outline"></span></a>
+                                        <a href="https://github.com/DFuenning/Trax" target="_blank"> <span class="ion-ios-plus-outline"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -226,12 +231,13 @@
                                 <div class="col-sm-8">
                                     <h2 class="w-title">Hana Technologies, Inc.</h2>
                                     <div class="w-more">
-                                        <span class="w-ctegory">Full Stack Development</span> / <span class="w-date">In Progress</span>
+                                        <span class="w-ctegory">Full Stack Development</span> / <span class="w-date">In
+                                            Progress</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="w-like">
-                                        <a href="portfolio-details.html"> <span class="ion-ios-plus-outline"></span></a>
+                                        <a href="www.hanaoh.com" target="_blank"> <span class="ion-ios-plus-outline"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +262,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="w-like">
-                                        <a href="portfolio-details.html"> <span class="ion-ios-plus-outline"></span></a>
+                                        <a href="https://dfuenning.github.io/Chicago-Crime-Mapping/" target="_blank"> <span class="ion-ios-plus-outline"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +287,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="w-like">
-                                        <a href="portfolio-details.html"> <span class="ion-ios-plus-outline"></span></a>
+                                        <a href="https://dfuenning.github.io/Brewery-App/" target="_blank"> <span class="ion-ios-plus-outline"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -306,7 +312,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="w-like">
-                                        <a href="portfolio-details.html"> <span class="ion-ios-plus-outline"></span></a>
+                                        <a href="https://warm-sierra-27869.herokuapp.com/?id=5eee3b294c072000171c25d8" target="_blank"> <span class="ion-ios-plus-outline"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -317,8 +323,220 @@
             </div>
         </div>
     </section><!-- End Portfolio Section -->
+    <section id="about" class="reserch-section spad">
+        <div class="aboutTitle">
+            <h3 class="title-a">
+                About Me
+            </h3>
+            <div id="white" class="line-mf"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-tabs reserch-tab-menu" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1"
+                                aria-selected="true">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2"
+                                aria-selected="false">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3"
+                                aria-selected="false">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4"
+                                aria-selected="false">FAQ's</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="tab-content reserch-tab">
+                        <!-- single tab content -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <h2>Education</h2>
+                            <h5 style="color: #fff;">Case Western Reserve University</h5>
+                            <p>Full Stack Web-Development Bootcamp - <i>Completed 2020</i> </p>
+                            <h5 style="color: #fff;">Kent State University</h5>
+                            <p>B.A.S Marketing & Finance - <i>Graduated 2015</i> </p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                            <h2>Experience</h2>
+                            <h5 style="color: #fff;">Free-Lance Developer <i>Aug. 2020 - Present</i></h5>
+                            <p>Currently working part-time developing full-stack websites on a contract basis for
+                                multiple companies in the area, and also prospecting more business for future
+                                development.</p>
+                            <h5 style="color: #fff;">Hana Technologies, Inc <i>2018 - Present</i></h5>
+                            <p> <span style="font-weight: bolder;">Business Analyst</span> <br> Responsible for analysis
+                                aimed to increase productivity, lower manufacturing expenses, and allow for new product
+                                production. Also managed Hana’s E-Commerce activities for direct sales to consumers.</p>
+                            <h5 style="color: #fff;">Things Remembered, Inc.<i>2017 - 2018</i></h5>
+                            <p> <span style="font-weight: bolder;">Financial Analyst</span> <br> Managed analytics for
+                                the TR Fulfillment Center (FC) in terms of planning and forecasting processes to ensure
+                                accurate, consistent and timely information for organizational and strategic planning.
+                            </p>
+                            <h5 style="color: #fff;">Dyson, Inc. <i>2015 - 2017</i></h5>
+                            <p> <span style="font-weight: bolder;">Marketing/Finance Analyst</span> <br> Support
+                                planning and decision-making through analysis and actionable insights with a focus on
+                                product categories and Marketing activities. Work in conjunction with marketing team to
+                                plan, establish, and maintain marketing investment budget. Evaluate consumer and market
+                                trends to aide mid- and long-range planning of new products and pricing</p>
 
 
+
+
+                        </div>
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                            <h2>What are my hobbies?</h2>
+                            <p>When I am not pouring my brain into VS code, you can usually find me staying very active.
+                                My wife and I love to travel (who doesn't?) to National Parks and hike any chance we can
+                                get. You can also find me attempting to solve a jigsaw puzzle on our dining room table
+                                or trying to understand if there is a strategy to scrabble. On my down time I really
+                                enjoy riding my bike to local breweries and restaurants to try new flavors and become a
+                                snob at beer drinking. I dabble in video games as well, however, coding has taken over
+                                my brain since completing my coursework and it is incredibly fulfilling.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
+                            <h2>FAQ's!</h2>
+                            <h5 style="color: #fff;">Am I a Browns Fan?</h5>
+                            <p>Unfortunately...a huge one.</p>
+                            <h5 style="color: #fff;">How long have I been coding?</h5>
+                            <p>For about 2 years I have been actively coding. It started when I needed to fix a bug on
+                                my company's website, and ended with me falling in love with how much freedom
+                                development give you in designing beautiful sites.</p>
+                            <h5 style="color: #fff;">Where do you see yourself in 5 years?</h5>
+                            <p>I have worked at 2 previous companies that either went bankrupt or deleted my department
+                                entirely. I would love to be on a team of developers for a long time, creating and/or
+                                maintaining beautiful websites for years to come.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="paralax-mf footer-paralax bg-image route">
+        <div class="overlay-mf"></div>
+        <div class="container" id="zoomies">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+                        <div id="contact" class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="title-box-2">
+                                        <h5 class="title-left">
+                                            Drop Me A Line!
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <form action="forms/contact.php" method="post" role="form"
+                                            class="php-email-form">
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="name" class="form-control" id="name"
+                                                            placeholder="Your Name" data-rule="minlen:4"
+                                                            data-msg="Please enter at least 4 chars" />
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            placeholder="Your Email" data-rule="email"
+                                                            data-msg="Please enter a valid email" />
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject"
+                                                            id="subject" placeholder="Subject" data-rule="minlen:4"
+                                                            data-msg="Please enter at least 8 chars of subject" />
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" name="message" rows="5"
+                                                            data-rule="required"
+                                                            data-msg="Please write something for us"
+                                                            placeholder="Message"></textarea>
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 text-center mb-3">
+                                                    <div class="loading">Loading</div>
+                                                    <div class="error-message"></div>
+                                                    <div class="sent-message">Your message has been sent. Thank you!
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 text-center">
+                                                    <button type="submit"
+                                                        class="button button-a button-big button-rouded">Send
+                                                        Message</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            Get in Touch
+                                        </h5>
+                                    </div>
+                                    <div class="more-info">
+                                        <p class="lead">
+                                            Send me a message about whatever you would like! Need help with your current
+                                            website? Need some advice when it comes to coding? Do you have an awesome
+                                            taco recipe or hiking trail you would like to suggest (Yes Please!) to me?
+                                            Whatever you need to chat about, I am around!
+                                        </p>
+                                        <ul class="list-ico">
+                                            <li><span class="ion-ios-location"></span>Stow, OH</li>
+                                            <li><span class="ion-ios-telephone"></span>(330) 571-3020 </li>
+                                            <li><span class="ion-email"></span>DFuenning@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                    <div class="socials">
+                                        <ul>
+                                            <li><a href="https://github.com/DFuenning"><span class="ico-circle"><i
+                                                            class="ion-social-github"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>Derek Fuenning</strong>. All Rights Reserved</p>
+                        <div class="credits">
+                            +
+                            Designed by <a href="index.html">Derek Fuenning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End  Footer -->
 
 
 
