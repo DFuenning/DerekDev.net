@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    color: #009970;
+    color:#05386B;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
@@ -38,7 +38,7 @@ a:hover {
 }
 
 .color-a {
-    color: #009970;
+    color:#05386B;
 }
 
 .color-d {
@@ -167,7 +167,7 @@ a:hover {
 .line-mf {
     width: 40px;
     height: 5px;
-    background-color: #009970;
+    background-color:#05386B;
     margin: 0 auto;
 }
 
@@ -185,7 +185,7 @@ a:hover {
     content: '';
     position: absolute;
     height: 3px;
-    background-color: #009970;
+    background-color:#05386B;
     width: 100px;
     bottom: -12px;
 }
@@ -226,12 +226,12 @@ a:hover {
     border-radius: 50%;
     line-height: 1.4;
     margin: 0 15px 0 0;
-    box-shadow: 0 0 0 3px #009970;
+    box-shadow: 0 0 0 3px#05386B;
     transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-    background-color: #009970;
+    background-color:#05386B;
     color: #fff;
     box-shadow: 0 0 0 3px #cde1f8;
     transition: all 500ms ease;
@@ -255,7 +255,7 @@ a:hover {
 }
 
 .list-ico span {
-    color: #009970;
+    color:#05386B;
     margin-right: 10px;
 }
 
@@ -268,7 +268,7 @@ a:hover {
     line-height: 1.55;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 0 0 10px #009970;
+    box-shadow: 0 0 0 10px#05386B;
     display: block;
 }
 
@@ -313,7 +313,7 @@ a:hover {
     position: fixed;
     width: 42px;
     height: 42px;
-    background-color: #009970;
+    background-color:#05386B;
     opacity: .7;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -331,7 +331,7 @@ a:hover {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #009970;
+    background:#05386B;
     color: #fff;
     width: 44px;
     height: 44px;
@@ -374,7 +374,7 @@ a:hover {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #f2f2f2;
-    border-top: 6px solid #009970;
+    border-top: 6px solid#05386B;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -430,7 +430,7 @@ a:hover {
 }
 
 .button-a {
-    background-color: #009970;
+    background-color:#05386B;
     color: #fff;
     border-color: #cde1f8;
 }
@@ -551,26 +551,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-    color: #009970;
+    color:#05386B;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-    background-color: #009970;
+    background-color:#05386B;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-    color: #009970;
+    color:#05386B;
 }
 
 .navbar-b.navbar-reduce .show>.nav-link,
 .navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-    color: #009970;
+    color:#05386B;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-    color: #009970;
+    color:#05386B;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -601,13 +601,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-    background-color: #009970;
+    background-color:#05386B;
     color: #fff;
     transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-    background-color: #009970;
+    background-color:#05386B;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -734,7 +734,7 @@ a:hover {
 
 .intro-single .breadcrumb {
     background-color: transparent;
-    color: #009970;
+    color:#05386B;
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -757,7 +757,7 @@ a:hover {
 
 .why-us .content {
     padding: 30px;
-    background: #009970;
+    background:#05386B;
     border-radius: 4px;
     color: #fff;
 }
@@ -766,6 +766,7 @@ a:hover {
     font-weight: 700;
     font-size: 34px;
     margin-bottom: 30px;
+    color: #8EE4AF;
 }
 
 .why-us .content p {
@@ -786,7 +787,7 @@ a:hover {
 }
 
 .why-us .content .more-btn:hover {
-    color: #009970;
+    color:#05386B;
     background: #fff;
 }
 
@@ -802,7 +803,7 @@ a:hover {
 
 .why-us .icon-boxes .icon-box i {
     font-size: 40px;
-    color: #009970;
+    color:#05386B;
     margin-bottom: 30px;
 }
 
@@ -860,8 +861,8 @@ a:hover {
 }
 
 .cta .cta-btn:hover {
-    background: #009970;
-    border: 2px solid #009970;
+    background:#05386B;
+    border: 2px solid#05386B;
 }
 
 /*--------------------------------------------------------------
@@ -898,22 +899,31 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-    color: #009970;
+    color:#05386B;
 }
 
 .work-content .w-like {
     font-size: 2.5rem;
-    color: #009970;
+    color:#05386B;
     float: right;
 }
 
 .work-content .w-like a {
-    color: #009970;
+    color:#05386B;
 }
 
 .work-content .w-like .num-like {
     font-size: .7rem;
 }
+
+@media (max-width: 768px) and (min-width: 540) {
+    .work-content {
+        height: 100px;
+        padding-top: 0;
+    }
+    
+}
+
 
 .w-title {
     font-size: 1.2rem;
@@ -953,7 +963,7 @@ a:hover {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-    background-color: #009970 !important;
+    background-color:#05386B !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1012,7 +1022,7 @@ a:hover {
 
 /* FAQ Section */
 .reserch-section {
-    background: #009970;
+    background:#05386B;
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100vw;
@@ -1061,7 +1071,7 @@ a:hover {
 }
 
 .reserch-tab-menu li.nav-item a.nav-link.active {
-    background: #ffc000;
+    background:#5CDB95;
 }
 
 .reserch-tab {
@@ -1176,7 +1186,7 @@ a:hover {
 
 .php-email-form input::focus,
 .php-email-form textarea::focus {
-    background-color: #009970;
+    background-color:#05386B;
 }
 
 .php-email-form input {
@@ -1189,7 +1199,7 @@ a:hover {
 }
 
 .php-email-form button[type="submit"] {
-    background: #009970;
+    background:#05386B;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -1197,7 +1207,7 @@ a:hover {
 }
 
 .php-email-form button[type="submit"]:hover {
-    background: #3393ff;
+    background: #5cdb95;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1226,7 +1236,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 25px 0;
-    background: #009970;
+    background:#05386B;
 }
 
 footer .copyright {
